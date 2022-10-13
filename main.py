@@ -21,7 +21,7 @@ class Main:
         username = user[0]
         passw = user[1]
 
-        return 'database: ' + dbname + ' username: ' + username + ' password: ' + passw + ' status: ' + grant
+        return 'database: ' + dbname + ' username: ' + username + ' password: ' + passw + ' host: ' + environ.get['DB_URL']
         
     
     def initDb(self):
